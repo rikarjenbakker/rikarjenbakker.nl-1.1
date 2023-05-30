@@ -1,0 +1,99 @@
+html {
+  background-color: #8abeaf;
+  color: #323232;
+  font-family: "monaco", monospace;
+  font-size: 16px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+h3 {
+  text-align: center;
+}
+
+.menu-item {
+  color: #8abeaf;
+  text-decoration: none;
+}
+
+.menu-item:hover {
+  color: #969696;
+}
+
+.menu-div {
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  position: relative;
+  list-style-type: none;
+  background-color: #323232;
+  text-align: center;
+  width: 30vw;
+  line-height: 175%;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 0.5rem;
+}
+
+.contact-text{
+  text-align: center;
+  line-height: 175%;
+  color: #323232;
+}
+
+.contact-content {
+  display: flex;
+  font-size: 125%;
+  justify-content: center;
+}
+
+.contact-link {
+  color: #323232;
+}
+
+.contact-link:hover {
+  color: #969696;
+}
+
+.rikkie {
+  width: 12vw;
+  margin-left: 5rem;
+}
+
+.home-button-parant {
+  display: flex;
+  justify-content: center;
+}
+
+.home-button {
+  color: #8abeaf;
+  background-color: #323232;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.zakelijke-tekst {
+  margin: 10vw;
+  text-align: center;
+  background-color: #323232;
+  color: #8abeaf;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.zakelijke-link {
+  color: #8abeaf;
+}
+
+.zakelijke-link:hover {
+  color: #969696;
+}
