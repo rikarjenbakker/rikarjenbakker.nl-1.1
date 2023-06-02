@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="/img/mine.png">
+
+  <title>Mijn Eerste Webgame</title>
+</head>
+<body>
+  <h2 class="titlegame">Vlag or Mine</h2>
+  <main class="maingame">
+    <div class="game">
+
+      <div class="menuarea">
+        <div class="mines">
+          <img src="img/flag.png" alt="Flag" class="menu-img">
+          <span id="score" class="mines__mines-left">0</span>
+        </div>
+
+        <div class="game-info">
+          <div class="live">
+            <img id="winlose" src="/img/happy.png" alt="Happy" class="menu-img">
+          </div>
+          <div class="timer-info">
+              <span id="time-played" class="time-played">
+                <div id="time">0:00</div>
+              </span>
+              <img src="img/timer.png" alt="Timer" class="menu-img">
+          </div>
+        </div>
+
+        <div class="restart">
+          <img onclick="reset()" src="img/restart.png" alt="restart" class="menu-img">
+        </div>      
+      </div>
+      
+      <div class="playarea">
+        <div class="blocks">
+          <div class="block"><img id="1" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="2" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="3" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="4" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="5" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="6" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="7" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="8" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="9" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="10" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="11" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="12" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="13" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="14" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="15" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="16" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="17" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="18" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="19" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="20" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="21" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="22" class="point" src="img/0.png"></div>     
+          <div class="block"><img id="23" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="24" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="25" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="26" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="27" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="28" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="29" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="30" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="31" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="32" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="33" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="34" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="35" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="36" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="37" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="38" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="39" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="40" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="41" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="42" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="43" class="point" src="img/0.png"></div>    
+          <div class="block"><img id="44" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="45" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="46" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="47" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="48" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="49" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="50" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="51" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="52" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="53" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="54" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="55" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="56" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="57" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="58" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="59" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="60" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="61" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="62" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="63" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="64" class="point" src="img/0.png"></div>  
+          <div class="block"><img id="65" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="66" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="67" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="68" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="69" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="70" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="71" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="72" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="73" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="74" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="75" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="76" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="77" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="78" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="79" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="80" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="81" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="82" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="83" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="84" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="85" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="86" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="87" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="88" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="89" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="90" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="91" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="92" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="93" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="94" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="95" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="96" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="97" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="98" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="99" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="100" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="101" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="102" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="103" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="104" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="105" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="106" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="107" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="108" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="109" class="point" src="img/0.png"></div>
+          <div class="block"><img id="110" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="111" class="point" src="img/0.png"></div> 
+          <div class="block"><img id="112" class="point" src="img/0.png"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
