@@ -51,7 +51,7 @@
               <?= $product['Title'] ?>
             </p>
             <div class="product-page-info-summary">
-              tekst samenvatting
+              Dit is een <?= $product['Status'] ?>  
             </div>
             <div class="product-page-info-status-price">
               Status: <?= $product['Status'] ?><br>
