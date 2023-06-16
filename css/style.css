@@ -66,6 +66,12 @@ h3 {
   margin-left: 5rem;
 }
 
+.rikkie-zakelijk {
+  width: 10rem;
+  margin-left: 1rem;
+  padding-right: 2.5rem;
+}
+
 .home-button-parant {
   display: flex;
   justify-content: center;
@@ -81,13 +87,14 @@ h3 {
 }
 
 .zakelijke-tekst {
-  margin: 10vw;
+  margin: 5vw;
   text-align: center;
   background-color: #323232;
   color: #8abeaf;
   border-radius: 0.5rem;
-  padding: 1.5rem;
+  padding: 2.5rem 2.5rem 2.5rem 2.5rem;
   font-size: 1.2rem;
+  display: flex;
 }
 
 .zakelijke-link {
@@ -96,4 +103,11 @@ h3 {
 
 .zakelijke-link:hover {
   color: #969696;
+}
+
+.link-zakelijk {
+  width: min-content;
+  height: min-content;
+  margin: 0px;!important
+  padding: 0px;!important
 }
